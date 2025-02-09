@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="consola"></div>
+    <script>
+        let x = prompt('Ingrese el numero de columnas');
+        let y = prompt('Ingrese el numero de filas');
+        x=(Number(x));
+        y=(Number(y));
+        
+        let z = '';
+        
+        for(let i = 0; i < x; i++){
+            for(let j = 0; j < y; j++){
+                z += '*';
+            } 
+            document.getElementById("consola").innerHTML = z += "<br>";
+        }
+    </script>
+    </script>
+</body>
+</html>
