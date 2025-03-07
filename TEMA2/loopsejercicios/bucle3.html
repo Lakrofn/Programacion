@@ -7,21 +7,20 @@
 </head>
 <body>
     <div id="consola"></div>
-    <script>
-        let x = prompt('Ingrese el numero de columnas');
-        let y = prompt('Ingrese el numero de filas');
-        x=(Number(x));
-        y=(Number(y));
-        
-        let z = '';
-        
-        for(let i = 0; i < x; i++){
-            for(let j = 0; j < y; j++){
-                z += '*';
-            } 
-            document.getElementById("consola").innerHTML = z += "<br>";
+    <script type="text/javascript">
+       let tamaño = prompt("Ingrese el tamaño del cuadrado");
+       asteriscos='';
+       for(let i = 1; i<= tamaño; i++){
+        for(let j = 1; j <= tamaño; j++){
+            if(j == 1 || j == tamaño || i == 1 || i == tamaño){
+                asteriscos += '*';
+            }else{
+                asteriscos += ' ';
+            }
         }
-    </script>
+        document.getElementById("consola").innerHTML = asteriscos += "<br>";
+       }
+    
     </script>
 </body>
 </html>

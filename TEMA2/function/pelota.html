@@ -7,19 +7,13 @@
 </head>
 <body>
     <script>
-        let x = 5;
-        let y = 5;
-
-        let z = '';
-        
-        for(let i = 0; i < x; i++){
-            for(let j = 0; j < y; j++){
-                z += '*';
-            } 
-            z += '\n';
+        function drawBall(x, y, radius, color){
+            ctx.beginPath();
+            ctx.arc(x, y, radius, 0, Math.PI*2);
+            ctx.fillStyle = color;
+            ctx.fill();
+            ctx.closePath();
         }
-        console.log(z);
     </script>
-
 </body>
 </html>
