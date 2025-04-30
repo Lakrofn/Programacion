@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -6,14 +6,16 @@ body{
     height: 100vh;
     background: linear-gradient(to top, #02cafc, #000000);
 }
-#calculadora{
+
+#calculadora {
     font-family: Arial, sans-serif;
     background-color: rgb(0, 0, 0);
     border-radius: 50px;
     max-width: 500px;
     overflow: hidden;
 }
-#pantalla{
+
+#pantalla {
     width: 100%;
     padding: 20px;
     font-size: 5rem;
@@ -23,14 +25,15 @@ body{
     color: rgb(255, 255, 255);
 }
 
-#botones{
+#botones {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     padding: 25px;
 }
-button{
-    width:100px;
+
+button {
+    width: 100px;
     height: 100px;
     border: none;
     border-radius: 5px;
@@ -40,28 +43,30 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-image: url(https://www.fiftysounds.com/images/graphics/white-low-poly-background-338.jpg);
 }
 
-button:active{
-    background-image:url(favicon.ico);
+button:active {
+    background-image: url(favicon.ico);
 }
-.operator{
+
+.operator {
     background: linear-gradient(to right, #02cafc, #ffffff);
 }
-.operator:hover{
+
+.operator:hover {
     background-color: rgb(35, 114, 67);
 }
 
-.igual{
+.igual {
     background: linear-gradient(to right, #02cafc, #ffffff);
 }
 
-.numero{
+.numero {
     background: linear-gradient(to right, #d107f5, #ffffff);
 }
 
-.punto{
+.punto {
     background: linear-gradient(to right, #02cafc, #ffffff);
 }
