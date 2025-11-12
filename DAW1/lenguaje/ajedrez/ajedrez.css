@@ -1,0 +1,31 @@
+#rojo {
+    background-color: rgb(239, 10, 10);
+}
+#gris {
+    background-color: rgb(171, 168, 168);
+}
+table {
+    border-spacing: 0;
+}
+td {
+    width: 80px;
+    height: 80px;
+}
+.izquierda {
+    border-left: 5px solid black;
+}
+.abajo {
+    border-bottom: 5px solid black;
+}
+.derecha {
+    border-right: 5px solid black;
+}
+.primero {
+    border-top: 5px solid black;
+}
+#text {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}
