@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function showPlayer(index) {
+        // <!-- access with index -->
+        let form = document.forms[0];
+        // <!-- get element in form reference -->
+        let elements = form.elements;
+        // <!-- get value of element -->
+        let radio = elements.player;
+        alert(radio[index].value);
+    }
+    </script>
+</head>
+<body>
+    <form name="players">
+        <input type="radio" name="player" value="p11" id="p11"
+        title="harden" onclick="showPlayer(0)">
+        <label for="p11">Harden</label>
+        <input type="radio" name="player" value="p12" id="p12" 
+        title="curry" onclick="showPlayer(1)">
+        <label for="p12">Curry</label>
+        <input type="radio" name="player" value="p13" id="p13" 
+        title="james" onclick="showPlayer(2)">
+        <label for="p13">James</label>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenedor1"></div>
+    <div id="contenedor2"></div>
+    <div id="contenedor3"></div>
+    <div id="contenedor4"></div>
+    <script type="text/javascript">
+        function fun1() {
+            let num1 = prompt("Ingrese un numero");
+            num1 = (Number(num1));
+            for (let y = 0; y <= num1; y++) {
+                if (num1 % y == 0) {
+                    document.getElementById("contenedor1").innerHTML += y + "<br>";
+                }
+            }
+        }
+        function fun2() {
+            let x = 10;
+            x = (Number(x));
+            let asterisco = '';
+            for (let i = 0; i < x; i++) {
+                for (let j = 0; j < i + 1; j++) {
+                    asterisco += '*';
+                }
+                asterisco += '<br>';
+            }
+            document.getElementById("contenedor2").innerHTML = asterisco += "<br>";
+        }
+        function fun3() {
+            let filas = 10;
+            let columnas = 10;
+
+            let cuadrado = '';
+
+            for (let i = 0; i < filas; i++) {
+                for (let j = 0; j < columnas; j++) {
+                    cuadrado += '*';
+                }
+                cuadrado += '<br>';
+            }
+            document.getElementById("contenedor3").innerHTML = cuadrado += "<br>";
+        }
+        function fun4() {
+            let x = 10;
+            x = (Number(x));
+            let asterisco = '';
+            for (let i = x; i > 1; i--) {
+                for (let j = 0; j < i - 1; j++) {
+                    asterisco += '*';
+                }
+                asterisco += '<br>';
+            }
+           document.getElementById("contenedor4").innerHTML = asterisco += "<br>";
+        }
+        fun1();
+        fun2();
+        fun3();
+        fun4();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="example">
+        text in paragraph 1
+    </p>
+    <p class="demo">
+        text in paragraph 2
+    </p>
+    <div>
+        <p>
+            text in paragraph 4
+        </p>
+    </div>
+    <div>
+        <span id="op1">
+            number 1
+        </span>
+        <span>
+            *
+        </span>
+        <span id="op2">
+            number 2
+        </span>
+        <button onclick="compute()">Calculate</button>
+        <div>
+            <span>
+                result
+            </span>
+        </div>
+    </div>
+    <button onchange='backgroundColor("blue")'>
+        change background color
+    </button>
+    <script type="text/javascript">
+        function compute() {
+            let op1 = prompt("Dame el primer operador");
+            let op2 = prompt("Dame el segundo operador");
+            document.querySelector("#op1").innerHTML = op1;
+            op1 = Number(op1);
+            document.querySelector("#op2").innerHTML = op2;
+            op2 = Number(op2);
+            let result = op1*op2;
+            document.querySelector("div > div > span").innerHTML = "result:" + result;
+        }
+        function myfunction() {
+            document.querySelector("p.example").style.backgroundColor = "red";
+            document.querySelector("p.demo").style.backgroundColor = "blue";
+            document.querySelector("div > p").style.backgroundColor = "green";
+        }
+        myfunction();
+    </script>
+    
+</body>
+
+</html>

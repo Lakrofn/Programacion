@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+
+<body>
+    <div id="calculadora">
+        <input id="pantalla" readonly>
+        <div id="botones">
+            <button onclick="limpiar()" class="operator">C</button>
+            <div></div>
+            <div></div>
+            <button onclick="operadores('^')" class="operator">^</button>
+            <button onclick="operadores('-')" class="operator">-</button>
+            <button onclick="numeros('1')" class="numero">1</button>
+            <button onclick="numeros('2')" class="numero">2</button>
+            <button onclick="numeros('3')" class="numero">3</button>
+            <button onclick="operadores('+')" class="operator">+</button>
+            <button onclick="numeros('4')" class="numero">4</button>
+            <button onclick="numeros('5')" class="numero">5</button>
+            <button onclick="numeros('6')" class="numero">6</button>
+            <button onclick="operadores('/')" class="operator">/</button>
+            <button onclick="numeros('7')" class="numero">7</button>
+            <button onclick="numeros('8')" class="numero">8</button>
+            <button onclick="numeros('9')" class="numero">9</button>
+            <button onclick="operadores('*')" class="operator">*</button>
+            <button onclick="numeros('0')" class="numero">0</button>
+            <button onclick="numeros('.')" class="punto">.</button>
+            <button onclick="calculo()" class="igual">=</button>
+        </div>
+    </div>
+
+    <script src="calculos.js"></script>
+</body>
+
+</html>
