@@ -11,4 +11,7 @@ def palabra_escondida(cadena, palabra):
     else:
         return False
     
-print(palabra_escondida("supercalifragilisticoespialidoso","rapido"))
+assert(palabra_escondida("supercalifragilisticoespialidoso","rapido")== True)
+assert(palabra_escondida("supercalifragilisticoespialidoso","oso")== True)
+assert(palabra_escondida("supercalifragilisticoespialidoso","superespia")== True)
+assert(palabra_escondida("supercalifragilisticoespialidoso","fragiles")== True)

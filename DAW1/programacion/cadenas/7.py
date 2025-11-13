@@ -7,4 +7,6 @@ def numeroenfrase(frase):
    return contador
 
 
-print(numeroenfrase("H0l4 s0y 4lvar0 6ruce2 mart1ne7, m3 gu27a 3ntren4r MM4 y 6alisteni9"))
+assert(numeroenfrase("H0l4 s0y 4lvar0 6ruce2 mart1ne7, m3 gu27a 3ntren4r MM4 y 6alisteni9") == 17)
+assert(numeroenfrase("alvaro CRUCES martinez") == 0)
+assert(numeroenfrase("4lvar0 6ruce2 8ar5ine7") == 7)

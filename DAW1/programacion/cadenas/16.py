@@ -7,4 +7,7 @@ def contadordecaracteres(cadena):
             abecedario += i
     return contador
 
-print(contadordecaracteres("El perro de la zanahoria"))
+assert(contadordecaracteres("El perro de la zanahoria") == 11)
+assert(contadordecaracteres("Alvaro") == 5)
+assert(contadordecaracteres("Alvaro Cruces") == 9)
+assert(contadordecaracteres("Hola soy Alvaro Cruces") == 11)

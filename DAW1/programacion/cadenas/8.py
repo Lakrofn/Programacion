@@ -9,4 +9,7 @@ def palindromo(cadena):
     else:
         return False
 
-print(palindromo("se es o no se es"))
+assert(palindromo("se es o no se es")== True)
+assert(palindromo("hola soy alvaro cruces martinez") == False)
+assert(palindromo("reconocer") == True)
+assert(palindromo("Se verlas al reves") == True)

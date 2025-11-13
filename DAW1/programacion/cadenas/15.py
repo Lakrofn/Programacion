@@ -9,4 +9,6 @@ def contar_vocales(cadena):
                 acumulador += 1
     return acumulador
 
-print(contar_vocales("Alvaro"))
+assert(contar_vocales("Alvaro") == 2)
+assert(contar_vocales("Enrique") == 3)
+assert(contar_vocales("Isabel") == 3)

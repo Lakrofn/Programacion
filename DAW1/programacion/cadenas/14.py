@@ -23,4 +23,7 @@ def reemplazar_palabra(cadena, busca, reemplazo, veces):
 
    return acumulador
 
-print(reemplazar_palabra("Hola soy Alvaro y tengo 23 años", "alvaro", "adrian", 4))
+assert(reemplazar_palabra("Hola soy Alvaro y tengo 23 años", "alvaro", "adrian", 4) == "hola soy adrian adrian adrian adrian y tengo 23 años")
+assert(reemplazar_palabra("hola soy alvaro y tengo 23 años", "alvaro", "adrian", 3) == "hola soy adrian adrian adrian y tengo 23 años")
+assert(reemplazar_palabra("hola soy alvaro y tengo 23 años", "alvaro", "adrian", 2) == "hola soy adrian adrian y tengo 23 años")
+assert(reemplazar_palabra("hola soy alvaro y tengo 23 años", "alvaro", "adrian", 1) == "hola soy adrian y tengo 23 años")
