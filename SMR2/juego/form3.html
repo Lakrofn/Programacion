@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        // change de value of the given textarea
+        // parameters:
+        // txt:
+
+        // return:
+        // bolean: indicates...
+        function tAreaChangeValue() {
+            let txt = prompt("Ingrese el texto");
+            let textArea = document.forms.registro.elements.tarea;
+            textArea.value += txt + "\n";
+        }
+        function getOptionSelected(){
+            let result= "";
+            // get a reference to form
+            let form = document.forms.registro;
+            // get selected component
+            let select = form.elements.vacaciones;
+            // join index and value into result
+                result= "indice: " + select.selectedIndex + " valor: " + select.value;
+            return result;
+        }
+    </script>
+</head>
+<body>
+    <form name="registro">
+        <textarea name="tarea" id="tarea"></textarea><br>
+        <select onchange="getOptionSelected()" name="vacaciones" id="vacaciones">
+            <option>selecciona picha</option>
+            <option value="V1" id="V1">playa</option>
+            <option value="V2" id="V2">montaña</option>
+            <option value="V3" id="V3">camping</option>
+        </select>
+    </form>
+    <button onclick="tAreaChangeValue()">cambiar</button>
+</body>
+
+</html>
