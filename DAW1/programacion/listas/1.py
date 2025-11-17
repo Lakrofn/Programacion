@@ -1,9 +1,9 @@
 from random import randint
 
-lista = [1,1,3,4,5,8,7,8,7]
+lista = []
 
-# for i in range(10000):
-#     lista.append(randint(1000))
+for i in range(10001):
+    lista.append(randint(1, 1001))
 
 
 # A
@@ -58,20 +58,27 @@ def mostrar():
 def tramo_mas_largo():
     mayor = 0
     tramo_mayor = []
+    posicion_mayor = []
     actual = 0
-    tramo_actual = []
-    for i in lista:
-        numero = int(i)
-        if numero > numero - 1 and numero < numero + 1:
-            tramo_actual.append(numero)
+    tramo_actual = [lista[0]]
+    posicion_actual = [0]
+    numero_anterior = lista[0]
+    for i in range(len(lista)):
+        if i != 0 and (lista[i] - 1) == numero_anterior:
+            tramo_actual.append(lista[i])
+            posicion_actual.append(i)
+            numero_anterior = lista[i]
             actual += 1
+        elif actual > mayor:
+            mayor = actual
+            tramo_mayor = tramo_actual
+            posicion_mayor = posicion_actual
         else:
-            if actual > mayor:
-                mayor = actual
-                tramo_mayor = tramo_actual
-            tramo_actual = []
             actual = 0
-    return tramo_mayor
+            tramo_actual = [lista[i]]
+            posicion_actual = [i]
+            numero_anterior = lista[i]
+    return print(f"El mayor tramo es {tramo_mayor} que estan en la posicion {posicion_mayor}")
 
-print(tramo_mas_largo())
-
+tramo_mas_largo()
+#print(mostrar())
