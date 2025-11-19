@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el producto</title>
+</head>
+<body>
+    <h1>Información sobre el producto</h1>
+    <form action="php/insertar_cv.php" method="get">
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" name="nombre" id="nombre" maxlength="30" size="50px">
+            <br>
+            <br>
+            <label for="descripcion">Descripción</label>
+            <br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea>
+            <br>
+            <br>
+            <label for="foto">foto</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+            <br>
+            <br>
+            <input type="checkbox">
+            <label>Añadir contador de visitas</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" size="10px" style="width: 40px;">
+            <label for="precio">€</label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="impuestos">Impuestos</label>
+            <select name="impuestos" id="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br>
+            <br>
+            <label for="promocion">Promoción</label>
+            <br>
+            <input type="radio" name="promocion" id="promocion" value="Ninguno" checked>Ninguno
+            <br>
+            <input type="radio" name="promocion" id="promocion" value="Transporte">Transporte gratuito
+            <br>
+            <input type="radio" name="promocion" id="promocion" value="Descuento">Descuento del 5%
+        </fieldset>
+    </form>
+</body>
+</html>

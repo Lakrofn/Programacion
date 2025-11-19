@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rellena tu CV</title>
 </head>
 <body>
-    <form action="php/insertar_cv.php">
+    <h1>Rellena tu CV</h1>
+    <form action="php/insertar_cv.php" method="get">
         <label for="nombre">Nombre</label>
         <br>
         <input type="text" name="nombre" id="nombre" maxlength="30">
@@ -23,7 +24,23 @@
         <br>
         <input type="text" name="dni" id="dni" size="10">
         <br>
-        
+        <label for="sexo">Sexo</label>
+        <br>
+        <input type="radio" name="sexo" id="sexo" value="Masculino">Masculino
+        <br>
+        <input type="radio" name="sexo" id="sexo" value="Femenino">Femenino
+        <br>
+        <br>
+        <label for="foto">Incluir mi foto</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+        <br>
+        <br>
+        <input type="checkbox" checked>
+        <label>Suscribirme al boletin de novedades</label> 
+        <br>
+        <br>
+        <input type="submit" value="Guardar cambios">
+        <input type="reset" value="Borrar los datos introducidos">
     </form>
 </body>
 </html>

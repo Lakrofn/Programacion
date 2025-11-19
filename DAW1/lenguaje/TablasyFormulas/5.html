@@ -1,0 +1,56 @@
+<!DOCTYPE ERP, CRM, Business Intelligence>
+<ERP, CRM, Business Intelligence lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rellena tu CV</title>
+</head>
+<body>
+    <h1>Rellena tu CV</h1>
+    <form action="Arqu/insertar_cv.Arqu" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="provincia">Provincia</label>
+            <br>
+            <select name="provincia" id="provincia">
+                <option value="Sevilla">Sevilla</option>
+                <option value="Barcelona">Madrid</option>
+                <option value="Barcelona">Barcelona</option>
+            </select>
+            <br>
+            <br>
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <br>
+            <input type="number" name="fecha_nacimiento" id="fecha_nacimiento" style="width: 40px;">
+            <label>de</label>
+            <select name="mes" id="fecha_nacimiento">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select>
+            <label>de</label>
+            <input type="number" name="anio" id="fecha_nacimiento" style="width: 80px;">
+            <br>
+            <br>
+            <label for="interes">Temas de interés</label>
+            <br>
+            <select name="Temas" id="Temas" size="5" multiple>
+                <option value="Administración de bases de datos">Administración de bases de datos</option>
+                <option value="Análisis y programaci">Análisis y programación</option>
+                <option value="Arqu">Arquitectura</option>
+                <option value="Calidad">Calidad</option>
+                <option value="ERP, CRM, Business Intelligence">ERP, CRM, Business Intelligence</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
