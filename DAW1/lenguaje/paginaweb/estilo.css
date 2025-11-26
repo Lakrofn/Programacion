@@ -1,0 +1,52 @@
+#cabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+}
+#debajodecabecera{
+    background: #9b4dfa;
+    color: white;
+    text-align: center;
+    padding: 40px 10px;
+    border-radius: 10px;       
+}
+.debajodecabecera h1{
+    margin-top: 50px;
+}
+.morado{
+    color: #9b4dfa;
+}
+.botonmorado{
+    background-color: #9b4dfa;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(253, 251, 255, 0.8);
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.botonblanco{
+    background-color: rgb(255, 255, 255);
+    color: #9b4dfa;
+    border: 1px solid #9b4dfa;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+.cuadradosapaginas{
+    display: flex;
+    justify-content: space-around;
+}
+.cuadradosapaginas button{
+    text-align: left;
+    width: 250px;
+    box-shadow: 0 0px 4px rgba(90, 89, 89, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgba(253, 251, 255, 0.8);
+    padding: 20px 35px;
+    margin: 10px;
+    background-color: white;
+}
