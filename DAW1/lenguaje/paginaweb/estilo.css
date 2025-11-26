@@ -1,20 +1,55 @@
 #cabecera{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: rgb(255, 255, 255);
     height: 50px;
-}   
-#debajodecabecera{
-    background: #9b4dfa;
-    color: white;
-    text-align: center;
-    padding: 40px 10px;
-    border-radius: 10px;   
-    height: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-.debajodecabecera h1{
+#vidalibre{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    justify-content: space-between;
+    width: 9%;
+}
+#derecha{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+}
+.rojo{
+    background-color: red;
+    color: white;
+}
+
+#debajodecabecera{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;  
+}
+#debajodecabecera div{
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    background-color: #9b4dfa;
+    color: white;
+    padding: 50px 250px;
+    border-radius: 10px;
+    width: 70%;
+    margin-right: auto;
+}
+#debajodecabecera div h1{
     margin-top: 50px;
+    font-size: 50px;
+}
+#debajodecabecera div p{
+    margin-bottom: 50px;
+}
+#debajodecabecera div button{
+    margin-bottom: 50px;
 }
 .morado{
     color: #9b4dfa;
@@ -37,25 +72,41 @@
     border-radius: 10px;
     margin-left: 40px;
 }
+
+
+
 .cuadradosapaginas{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .cuadradosapaginas button{
+    flex-grow: 1;
+    flex-basis: 300px;
     text-align: left;
     width: 250px;
-    box-shadow: 0 0px 4px rgba(90, 89, 89, 0.5);
+    box-shadow: 0 0px 4px rgba(90, 89, 89, 0.5), -10px 10px 20px rgba(140, 0, 255, 0.1);
     border-radius: 10px;
     border: 1px solid rgba(253, 251, 255, 0.8);
-    padding: 20px 35px;
+    padding: 20px 85px;
     margin: 10px;
     background-color: white;
     position: relative;
     bottom: 50px;
     height: 200px;
 }
+.cuadradosapaginas button img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+
+
 .infohorarios{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #9b4dfa;
     color: white;
@@ -63,7 +114,70 @@
     padding: 20px 10px;
     border-radius: 10px;   
 }
+.infohorarios div{
+    flex-grow: 1;
+    flex-basis: 200px;
+}
 .infohorarios div h2{
     font-size: 50px;
     margin-bottom: 5px;
+}
+
+
+
+
+#compromiso h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+#compromisos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#compromisos div{
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 0px 4px rgba(90, 89, 89, 0.5), -10px 10px 20px rgba(140, 0, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(253, 251, 255, 0.8);
+    padding: 20px 35px;
+    justify-content: space-around;
+    margin: 10px;
+}
+#compromisos div img{
+    width: 60px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+
+
+#pregunta{
+    display: flex;
+    justify-content: space-around;
+}
+#pregunta{
+    margin-top: 100px;
+}
+.preguntacontenido{
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #9b4dfa;
+    color: white;
+    padding: 40px 80px;
+    border-radius: 10px;   
+    width: 70%;
+    height: 200px;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
