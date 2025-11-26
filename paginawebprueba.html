@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Libre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="icono.png" alt="icono">
+            <span>Vida Libre</span>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav class="menu">
+            <a href="#">Inicio</a>
+            <a href="#">¿Qué es?</a>
+            <a class="active" href="#">Pide Ayuda</a>
+            <a href="#">Noticias</a>
+            <a href="#">Educación</a>
+            <a href="#">Testimonios</a>
+            <a href="#">Puntos Violeta</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Por una vida libre de violencia</h1>
+        <p>
+            No estás sola. Aquí encontrarás información, apoyo y recursos para prevenir<br>
+            y superar la violencia de género.
+        </p>
+
+        <div class="hero-buttons">
+            <button class="btn-solid">
+                <span>📞</span> Necesito Ayuda
+            </button>
+
+            <button class="btn-outline">
+                Más Información
+            </button>
+        </div>
+    </section>
+
+    <!-- TARJETAS -->
+    <section class="cards">
+        <div class="card">
+            <div class="card-icon" style="background: #fddede;">
+                📞
+            </div>
+            <h3>Pide Ayuda</h3>
+            <p>Líneas de atención 24h y recursos de emergencia</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon" style="background: #efe1ff;">
+                📖
+            </div>
+            <h3>¿Qué es?</h3>
+            <p>Tipos de violencia y cómo identificarla</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon" style="background: #e1eaff;">
+                📰
+            </div>
+            <h3>Noticias</h3>
+            <p>Campañas, eventos y actualidad</p>
+        </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="stats">
+        <div class="stat-box">
+            <h2>016</h2>
+            <p>Atención 24h gratuita</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Ayuda disponible</p>
+        </div>
+
+        <div class="stat-box">
+            <h2>100+</h2>
+            <p>Puntos Violeta</p>
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+
+</body>
+</html>

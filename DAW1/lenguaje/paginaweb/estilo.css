@@ -15,12 +15,43 @@
 #derecha{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 50%;
     margin-left: auto;
+}
+#derecha button{
+    border: none;
+    height: 40px;
+    width: 110px;
+    border-radius: 10px;
 }
 .rojo{
     background-color: red;
     color: white;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+.rojo:hover{
+    background-color: #960000;
+    cursor: pointer;
+}
+.rojo:active{
+    background-color: #7d0000;
+    cursor: pointer;
+}
+.blanco{
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+.blanco:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.blanco:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
 }
 
 #debajodecabecera{
@@ -63,6 +94,16 @@
     border-radius: 10px;
     margin-left: 40px;
 }
+.botonmorado:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #9b4dfa;
+}
+.botonmorado:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
+    color: #9b4dfa;
+}
 .botonblanco{
     background-color: rgb(255, 255, 255);
     color: #9b4dfa;
@@ -72,7 +113,14 @@
     border-radius: 10px;
     margin-left: 40px;
 }
-
+.botonblanco:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.botonblanco:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
+}
 
 
 .cuadradosapaginas{
@@ -94,6 +142,15 @@
     position: relative;
     bottom: 50px;
     height: 200px;
+}
+.cuadradosapaginas button:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0px 8px rgba(90, 89, 89, 0.7), 0px 30px 20px rgba(140, 0, 255, 0.2);
+    cursor: pointer;
+}
+.cuadradosapaginas button:active{
+    transform: translateY(5px);
+    box-shadow: 0 0px 4px rgba(90, 89, 89, 0.5), -10px 10px 20px rgba(140, 0, 255, 0.1);
 }
 .cuadradosapaginas button img{
     width: 50px;
@@ -180,4 +237,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.preguntacontenido button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #9b4dfa;
+    border: 1px solid #9b4dfa;
+    height: 50px;
+    width: 230px;
+    border-radius: 10px;
+}
+.preguntacontenido button:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+.preguntacontenido button:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
+}
+
+#piepagina{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #780dfb;
+    color: white;
+    font-size: 15px;
+    margin-top: 100px;
+    padding: 30px 40px;
 }
