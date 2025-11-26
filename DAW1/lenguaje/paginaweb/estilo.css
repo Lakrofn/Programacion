@@ -4,13 +4,14 @@
     align-items: center;
     background-color: rgb(255, 255, 255);
     height: 50px;
-}
+}   
 #debajodecabecera{
     background: #9b4dfa;
     color: white;
     text-align: center;
     padding: 40px 10px;
-    border-radius: 10px;       
+    border-radius: 10px;   
+    height: 200px;
 }
 .debajodecabecera h1{
     margin-top: 50px;
@@ -49,4 +50,20 @@
     padding: 20px 35px;
     margin: 10px;
     background-color: white;
+    position: relative;
+    bottom: 50px;
+    height: 200px;
+}
+.infohorarios{
+    display: flex;
+    justify-content: space-around;
+    background-color: #9b4dfa;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;   
+}
+.infohorarios div h2{
+    font-size: 50px;
+    margin-bottom: 5px;
 }
