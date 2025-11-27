@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <section id="cabecera">
+    <header id="cabecera">
         <div id="vidalibre">
             <img src="imagenes/corazon.png" alt="corazon" width="35">
-            <h1 class="morado"> Vida Libre</h1>
+            <span class="morado"> Vida Libre</span>
         </div>
-        <div id="derecha">
-            <div><button class="blanco">Inicio</button></div>
-            <div><button class="blanco">Que es</button></div>
-            <div><button class="rojo">Pide ayuda</button></div>
-            <div><button class="blanco">Noticias</button></div>
-            <div><button class="blanco">Educacion</button></div>
-            <div><button class="blanco">Testimonios</button></div>
-            <div><button class="blanco">Puntos Violeta</button></div>
-            <div><button class="blanco">Contacto</button></div>
-        </div>
-    </section>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <div><a href="#" class="blanco">Inicio</a></div>
+            <div><a href="#" class="blanco">Que es</a></div>
+            <div><a href="#" class="rojo">Pide ayuda</a></div>
+            <div><a href="#" class="blanco">Noticias</a></div>
+            <div><a href="#" class="blanco">Educacion</a></div>
+            <div><a href="#" class="blanco">Testimonios</a></div>
+            <div><a href="#" class="blanco">Puntos Violeta</a></div>
+            <div><a href="#" class="blanco">Contacto</a></div>
+        </nav>
+    </header>
     <section id="debajodecabecera">
         <div>
             <h1 class="margentop">Por una vida libre de violencia</h1>
@@ -110,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section id="piepagina">
+    <footer id="piepagina">
         <div>
             <h2>Vida libre</h2>
             <p>Portal de información y apoyo contra la violencia de género.</p>
@@ -125,6 +126,12 @@
             <p>Ministerio de Igualdad</p>
             <p>Instituto de la Mujer</p>
         </div>
-    </section>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('#menu');
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
 </body>
 </html>
