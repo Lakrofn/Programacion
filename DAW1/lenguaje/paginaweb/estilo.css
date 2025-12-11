@@ -365,6 +365,92 @@
     align-content: center;
     margin: 10px;
 }
+#tiposdeviolencia div p{
+    margin: 10px;
+}
 #tiposdeviolencia div:hover{
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+#señalesalerta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #fffcdf;
+    border: #f6c80e solid 1px;  
+    margin-inline: 40px;
+    border-radius: 10px;
+}
+#señalesalerta div div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: 20px;
+}
+#señalesalerta div .espacioalertas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#señalesalerta div div.alertas{
+    flex-grow: 1;
+    flex-basis: 200px;
+    text-align: left;
+    background-color: #ffffff;
+    margin-block: 5px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+#señalesalerta div div.aviso{
+    background-color: #ffffff;
+    border-left: orange solid 5px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-block: 15px;
+    margin-inline: 40px;
+}
+#señales{
+    margin-top: 50px;
+    margin-inline: 50px;
+}
+#señales div.señalescontenido{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+#señales div.señalescontenido  p{
+    margin-block: 20px;
+}
+#señales div.señalescontenido div.patron{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    text-align: left;
+}
+#señales div.señalescontenido div.patron div{
+    flex-grow: 1;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+#señales div.señalescontenido div.fondorojo{
+    flex-grow: 1;
+    background-color: #ffd6d6;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+#señales div.señalescontenido div.fondomorado{
+    flex-grow: 1;
+    background-color: #f1d6ff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+#señales div.señalescontenido div.fondoazul{
+    flex-grow: 1;
+    background-color: #d6e2ff;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
 }
