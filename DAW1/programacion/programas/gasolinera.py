@@ -27,7 +27,9 @@ def opcion1(surtidores):
             print(f"El sustidor {surtidor} esta con {surtidores[i]} litros")
 
 def opcion2():
+    decimales = ""
     nuevo = True
+    pagos = False
     acumulador = []
     clientes = [['5555KKK', 'gasolina', 10], ['6666LLL', 'diesel', 20]]
     surtidores = [5000, 5000, 5000, 5000]
@@ -43,17 +45,24 @@ def opcion2():
         combustible = input("Introduce el tipo de combustible (gasolina o diesel): ")
         while combustible != "gasolina" and combustible != "diesel":
             combustible = input("Introduce un tipo de combustible valido (gasolina o diesel): ")
-        pago = float(input("Introduce cuanto vas a pagar: "))
-        while pago < 10 or not re.match(r'^\d+(\.\d{1,2})?$', str(pago)):
+        while pagos == False:
             pago = float(input("Introduce un pago valido con 2 decimales: "))
+            decimales = str(pago[-3:])
+            if len(decimales) == 2:
+                pagos = True
+
         acumulador.append(matricula)
         acumulador.append(combustible)
         acumulador.append(pago)
         clientes.append(acumulador)
     else:
         pago = float(input("Introduce cuanto vas a pagar: "))
-        while pago < 10 or not re.match(r'^\d+(\.\d{1,2})?$', str(pago)):
+        while pagos == False:
             pago = float(input("Introduce un pago valido con 2 decimales: "))
+            decimales = str(pago[-3:])
+            if len(decimales) <= 2:
+                pagos = True
+
         for i in clientes:
             if i[0] == matricula:
                 for j in i:

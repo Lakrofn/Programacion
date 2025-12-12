@@ -1,0 +1,11 @@
+tablero = [[1,2,3,4,5,6,7,8,9],[4,5,6,7,8,9,1,2,3],[7,8,9,1,2,3,4,5,6]] #[[2,3,1,5,6,4,8,9,7],[5,6,4,8,9,7,2,3,1],[8,9,7,2,3,1,5,6,4]],[[3,1,2,6,4,5,9,7,8],[6,4,5,9,7,8,3,1,2],[9,7,8,3,1,2,6,4,5]]]
+
+def crear_lista(tablero, inicio_x, inicio_y, fin_x, fin_y):
+    lista = []
+    for fila in range(inicio_x, fin_x+1):
+        for columna in range(inicio_y, fin_y+1):
+            lista.append(tablero[fila][columna])
+    return lista
+
+
+print (crear_lista(tablero, 0, 0, 2, 8))
