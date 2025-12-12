@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="barra">
+        <h1>Superhéroes de Marvel</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="heroes.html">Listado de Superhéroes</a></li>
+                <li><a href="registro.html">Registrar Superhéroes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Formulario de Registro</h2>
+        <fieldset>
+            <legend>Datos de Superhéroe</legend>
+            <label for="nombre">nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <br><br>
+            <label for="poderes">Selecciona los Poderes</label>
+            <select name="poderes" id="poderes">
+                <option value="vuelo">Vuelo</option>
+                <option value="Fuerza">Super Fuerza</option>
+                <option value="Invisibilidad">Invisibilidad</option>
+                <option value="Telepatía">Telepatía</option>
+                <option value="Velocidad">Velocidad Sobrehumana</option>
+                <option value="Control">Control de Elementos</option>
+                <option value="Regeneración">Regeneración</option>
+            </select>
+            <br><br>
+            <label for="genero">Género</label>
+            <input type="radio" name="masculino" id="masculino" value="masculino">Masculino
+            <input type="radio" name="femenino" id="femenino" value="femenino">Femenino
+            <br><br>
+            <label for="imagen">Subir Imagen:</label>
+            <input type="file" name="imagen" id="imagen" accept="image/*">
+            <br><br>
+            <label for="descripcion">Descripción Detallada:</label>
+            <textarea name="descripcion" id="descripcion"></textarea>
+            <br><br>
+            <a href="registrocorrecto.html"><input type="submit" value="Registrar Superheroe"></a>
+        </fieldset>
+    </section>
+    <footer>
+        <h3>Módulo de Lenguajes de Marcas</h3>
+        <p>Profesora: Cecilia Camacho Naranjo</p>
+        <p>Alumno: Álvaro Cruces Martínez</p>
+    </footer>
+</body>
+</html>
