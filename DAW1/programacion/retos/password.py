@@ -1,32 +1,34 @@
 
 def password(numero):
-    lista = ['L68', 'L30','R48','L5','R60','L55','L1','L99','R14','L82',]
     archivo = open("/users/alvar/Desktop/numeros.txt")
     password = 0
-    for linea in lista:
+    for linea in archivo:
         indicacion = linea.replace("\n", "")
         if indicacion[0] == 'R':
             movimiento = int(indicacion[1:])
             while movimiento > 0:
-                if numero != 100:
-                    numero += 1
-                    movimiento -= 1
-                else:
+                numero += 1
+                movimiento -= 1
+                if numero == 100:
+                    numero = 0
                     password += 1
                     movimiento -= 1
-                    numero = 0
+            if numero == 100:
+                numero = 0
+                password += 1
         else:
             movimiento = int(indicacion[1:])
             while movimiento > 0:
-                if numero != 0:
-                    numero -= 1
-                    movimiento -= 1
-                else:
+                numero -= 1
+                movimiento -= 1
+                if numero == 0:
+                    numero = 100
                     password += 1
-                    movimiento -= 1
-                    numero = 99
+            if numero == 0:
+                numero = 100
+                password += 1
 
         
     print (password)
 
-password(50)
+password(0)

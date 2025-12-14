@@ -622,4 +622,4 @@ def domino(participantes):
 
 
 
-domino(3)
+domino(2)

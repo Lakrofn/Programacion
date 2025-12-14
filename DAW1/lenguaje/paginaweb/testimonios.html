@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida Libre</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header id="cabecera">
+        <div id="vidalibre">
+            <img src="imagenes/corazon.png" alt="corazon" width="35">
+            <span class="morado"> Vida Libre</span>
+        </div>
+        <div class="hamburguesa" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <div><a href="inicio.html" class="blanco">Inicio</a></div>
+            <div><a href="quees.html" class="blanco">Que es</a></div>
+            <div><a href="#" class="rojo">Pide ayuda</a></div>
+            <div><a href="#" class="blanco">Noticias</a></div>
+            <div><a href="#" class="blanco">Educacion</a></div>
+            <div><a href="testimonios.html" class="blanco">Testimonios</a></div>
+            <div><a href="#" class="blanco">Puntos Violeta</a></div>
+            <div><a href="#" class="blanco">Contacto</a></div>
+        </nav>
+    </header>
+    <section id="testimonios">
+        <div>
+            <h1>Testimonios y Experiencias</h1>
+            <p>Historias de superación y esperanza. Compartir tu experiencia puede ayudar a otras personas.</p>
+        </div>
+    </section>
+    <section id="compartir">
+        <div id="formulario">
+            <h2>Comparte tu historia</h2>
+            <div class="naranja">
+                <p><strong>Privacidad: </strong>Tu identidad permanecerá anónima.</p>
+            </div>
+            <label for="titulo"><strong>Título (opcional)</strong></label>
+            <br>
+            <input type="text" name="titulo" id="titulo" class="texto">
+            <br><br>
+            <label for="historia"><strong>Tu Historia *</strong></label>
+            <br>
+            <textarea name="historia" id="historia" cols="30" rows="10" class="texto"n></textarea>
+            <br><br>
+            <label for="edad"><strong>Edad aproximada (opcional)</strong></label>
+            <br>
+            <input type="text" name="edad" id="edad" class="texto">
+            <br><br>
+            <label for="tipo"><strong>Tipo de violencia (opcional)</strong></label>
+            <br>
+            <select name="tipo" id="tipo" size="6" multiple>
+                <option value="psicologia">psicologia</option>
+                <option value="fisica">fisica</option>
+                <option value="economía">económica</option>
+                <option value="digital">digital</option>
+                <option value="sexual">sexual</option>
+                <option value="simbólica">simbólica</option>
+            </select>
+            <br><br>
+            <label for="mensaje"><strong>Mensaje de Esperanza (opcional</strong>)</label>
+            <br>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="texto"></textarea>
+            <br><br>
+            <input type="reset" value="Cancelar" class="cancelar">
+            <input type="submit" value="Enviar" class="enviar">
+        </div>
+    </section>
+    <section id="historias">
+        <div class="personas">
+            <div class="minicabecera">
+                <img src="imagenes/corazon.png">
+                <span>18-22 años</span>
+            </div>
+            <div class="historia">
+                <h2>El amor duele</h2>
+                <p>Siendo muy joven entré en una relación donde 
+                    los celos y el control eran constantes. Me decía 
+                    que era porque me quería mucho. Mis amigas me 
+                    advirtieron pero no las escuché. Hasta que en una 
+                    charla del instituto sobre violencia en el noviazgo, 
+                    me vi reflejada en todo. Ahí entendí que lo que vivía no era amor.
+                </p>
+                <span>psicologia</span>
+                <div class="verde">
+                    <p>"El amor verdadero es respeto, confianza y libertad. Todo lo demás no es amor."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="personas">
+            <div class="minicabecera">
+                <img src="imagenes/corazon.png">
+                <span>28-32 años</span>
+            </div>
+            <div class="historia">
+                <h2>De víctima a superviviente</h2>
+                <p>Sufrí violencia física durante 3 años. 
+                    Tenía miedo de denunciar, pensaba que nadie me creería.
+                    Pero una vecina llamó a la policía una noche y eso me 
+                    salvó la vida. El proceso fue duro, pero conté con apoyo 
+                    psicológico y legal. Hoy soy una superviviente.
+                </p>
+                <span>fisica</span><span>psicologia</span>
+                <div class="verde">
+                    <p>"Denunciar fue lo más difícil y valiente que hice. 
+                        Pero fue el inicio de mi nueva vida."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="personas">
+            <div class="minicabecera">
+                <img src="imagenes/corazon.png">
+                <span>40-45 años</span>
+            </div>
+            <div class="historia">
+                <h2>La violencia económica también es violencia</h2>
+                <p>Mi expareja controlaba todo el dinero de la casa. 
+                    Yo trabajaba pero no tenía acceso a mi propio salario. 
+                    Me hacía sentir inútil por no 'aportar' económicamente, 
+                    cuando era él quien me impedía gestionar mi dinero. 
+                    Gracias a una trabajadora social entendí que eso era violencia económica.
+                </p>
+                <span>economía</span><span>psicologia</span>
+                <div class="verde">
+                    <p>"Hoy tengo mi propia cuenta, mi independencia 
+                        económica y mi dignidad recuperada."
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="personas">
+            <div class="minicabecera">
+                <img src="imagenes/corazon.png">
+                <span>30-35 años</span>
+            </div>
+            <div class="historia">
+                <h2>Encontré mi voz</h2>
+                <p>Durante 5 años viví una relación donde poco a poco 
+                    fui perdiendo mi identidad. Me aislaba de mis amigas, 
+                    controlaba mi forma de vestir, revisaba mi móvil. 
+                    Pensaba que era amor. Hasta que un día, gracias a 
+                    una charla en mi trabajo, me di cuenta de que vivía 
+                    violencia psicológica. Llamé al 016 y empecé mi camino 
+                    hacia la libertad.
+                </p>
+                <span>psicologia</span><span>digital</span>
+                <div class="verde">
+                    <p>"Si estás dudando, ese ya es el primer paso. 
+                        Busca ayuda, no estás sola. Yo hoy vivo en paz."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testimonios">
+
+    </section>
+    <footer id="piepagina">
+        <div>
+            <h2>Vida libre</h2>
+            <p>Portal de información y apoyo contra la violencia de género.</p>
+        </div>
+        <div>
+            <h2>Teléfonos de ayuda</h2>
+            <p><strong>016</strong> - Atención 24h</p>
+            <p><strong>112</strong> - Emergencias</p>
+        </div>
+        <div>
+            <h2>Recursos</h2>
+            <p>Ministerio de Igualdad</p>
+            <p>Instituto de la Mujer</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('#menu');
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
+    </script>
+</body>
+</html>

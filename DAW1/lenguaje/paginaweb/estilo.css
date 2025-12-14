@@ -454,3 +454,153 @@
     padding: 10px;
     border-radius: 10px;
 }
+
+/* TESTIMINIOS */
+
+#testimonios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 70px;
+    padding-inline: 150px;
+}
+#testimonios div{
+    padding: 10px;
+}
+#testimonios div h1{
+    color: #780dfb;
+    margin-bottom: 15px;
+}
+#compartir{
+    justify-items: center;
+}
+#formulario{
+    background-color: #e6d6f9;
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#formulario div{
+    background-color: #fffcdf;
+    padding: 10px;
+    margin-block: 20px;
+    border-left: orange solid 5px;
+}
+#formulario input.enviar{
+    background-color: #780dfb;
+    color: white;
+
+}
+#formulario input.texto,textarea.texto{
+    width: 100%;
+    background-color: #e6d6f9;
+}
+#formulario select{
+    width: 100%;
+    background-color: #e6d6f9;
+    padding: 5px;
+}
+#formulario option:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+#formulario option:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
+}
+#formulario input.cancelar{
+    background-color: #fefefe;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0b0a0c;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    width: 100px;
+}
+#formulario input.enviar{
+    background-color: #780dfb;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #0b0a0c;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100px;
+}
+#formulario input.enviar:hover{
+    background-color: #9b4dfa;
+    cursor: pointer;
+}
+#formulario input.enviar:active{
+    background-color: #7d20ff;
+    cursor: pointer;
+}  
+#formulario input.cancelar:hover{
+    background-color: #e7e7e7;
+    cursor: pointer;
+}
+#formulario input.cancelar:active{
+    background-color: #bcbbbb;
+    cursor: pointer;
+}
+#historias{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+.personas{
+    width: 35%;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(198, 198, 198, 0.8);
+}
+.personas div.minicabecera{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.personas div.minicabecera img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.personas div.minicabecera span{
+    border: 1px solid #d5d4d5;
+    font-size: 12px;
+    padding: 5px;
+    height: 25px;
+    border-radius: 10px;
+}
+.personas div.historia h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.personas div.historia p{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.personas div.historia span{
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid #d5d4d5;
+    border-radius: 10px;
+}
+.personas div.historia div.verde{
+    align-items: center;
+    background-color: #bdf6c6;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: rgb(0, 207, 0) solid 5px;
+}
+.personas div.historia div.verde p{
+    margin-bottom: 0;
+    font-size: 12px;
+}
