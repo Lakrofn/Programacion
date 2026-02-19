@@ -1,0 +1,375 @@
+.escena-nieve {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(5, 12, 134);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.escena-nieve p {
+    left: 15px;
+    position: relative;
+}
+.copo {
+    display: flex;
+    margin-left: 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: relative;
+    background-color: white;
+    margin-right: 50px;
+}
+.copo-1 {
+    animation: nieve 5s infinite;
+}
+.copo-2 {
+    animation: nieve 4s infinite;
+}
+.copo-3 {
+    animation: nieve 6s infinite;
+}
+@keyframes nieve {
+    from {top: 0px;}
+    to {top: 250px; opacity: 0%;}
+}
+
+/* Ejercicio 10*/
+
+.caja-regalo {
+    width: 300px;
+    height: 150px;
+    background-color: rgb(246, 50, 19);
+    border: 5px solid rgb(252, 185, 78);
+    display: flex;
+    position: relative;
+}
+.elfo {
+    position: absolute;
+    top: -10%;
+    left: 90%;
+    background-color: green;
+    border-radius: 100%;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+}
+
+
+/* Ejercicio 11*/
+.ventana {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 300px;
+    border: 5px solid rgb(2, 26, 86);
+    height: 200px;
+    background-color: rgb(229, 225, 250);
+}
+.adorno {
+    border: 10px solid rgb(2, 26, 86);
+    align-content: center;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+
+/* Ejercicio 12*/
+.menu-banquete {
+    width: 100%;
+    background-color: rgb(4, 195, 87);
+    height: 50px;
+    align-content: center;
+}
+.menu-banquete ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+.menu-banquete li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Ejercicio 13*/
+.postal {
+    width: 100%;
+    background-color: rgb(251, 209, 44);
+    height: 200px;
+    align-content: center;
+    justify-items: center;
+}
+.postal p {
+    color: white;
+}
+
+@media (max-width: 600px){
+    .postal {
+        background-color: orange;
+    }
+}
+
+/*Ejercicio 14*/
+.decoracion {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(198, 198, 198);
+    border: 3px solid #c0392b;
+    align-content: end;
+}
+.decoracion button {
+    background-color: #c0392b;
+    color: white;
+    margin: 25px;
+    height: 30px;
+}
+.decoracion button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+/*Ejercicio 15*/
+
+.tarjeta-plegable {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(227, 186, 4);
+    align-content: center;
+}
+.tarjeta-plegable p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.contenido-oculto p {
+    background-color: red;
+    width: 100%;
+    height: 50px;
+    align-content: end;
+}
+
+.tarjeta-plegable:hover {
+    width: 100%;
+    transition: width 1s;
+}
+
+/*Ejercicio 16*/
+
+.tabla-regalos {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+}
+.tabla-regalos thead {
+    background-color: rgb(5, 190, 76);
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    border: 1px solid rgb(0, 0, 0);
+}
+.tabla-regalos td {
+    border: 1px solid rgb(0, 0, 0);
+}
+.tabla-regalos tbody tr:nth-child(odd) {
+    background-color: rgb(209, 208, 208);
+}
+
+/* Ejercicio 17*/
+.copo-adicional {
+    position: relative;
+    width: 70px;
+    height: 10px;
+    background-color: blue;
+    margin: auto;
+}
+.copo-adicional::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: blue;
+    transform: rotate(50deg);
+}
+.copo-adicional::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: blue;
+    transform: rotate(-50deg);
+}
+
+/* Ejercicio 18*/
+.filtro-invierno {
+    width: 50%;
+    filter: grayscale(50%) blur(3px);
+}
+.filtro-invierno:hover {
+    filter: none;
+}
+
+/* Ejercicio 19*/
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.galeria-grid .principal {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* Ejercicio 20*/
+
+.lista-ninos-buenos {
+    overflow: auto;
+    width: 25%;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(249, 3, 3);
+}
+
+.lista-ninos-buenos p {
+    color: white;
+}
+
+/* Ejercicio 21*/
+
+.bola-cristal {
+    font-size: 100px;
+    text-align: center;
+    background-color: #c0392b;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    justify-self: center;
+    transition: transform 1s;
+}
+.bola-cristal:hover {
+    transform: rotate(360deg) scale(1.5);
+    transition: transform 2s;
+}
+
+/* Ejercicio 22*/
+
+.formulario-deseos input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.formulario-deseos input:focus {
+    outline: none;
+    border: 2px solid #02f41e;
+}
+
+/* Ejercicio 23*/
+
+.seccion-parallax {
+    width: 100%;
+    height: 300px;
+    background-image: url(./imagen_navidad.jpg);
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* Ejercicio 24*/
+
+.escena-final {
+    display: grid;
+}
+
+
+/* Ejercicio 25*/
+
+.mensaje-secreto h1{
+    color: red;
+    font-size: 50px;
+    text-shadow: 4px 4px 4px rgb(179, 249, 4);
+}
+
+.mensaje-secreto p{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.mensaje-secreto p:hover{
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+
+/* Ejercicio 26*/
+
+.barra-fija {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 47, 84);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+}
+
+/* Ejercicio 27*/
+
+.form-propositos input:invalid {
+    border: 2px solid red;
+    outline: none;
+}
+
+.form-propositos input:valid {
+    border: 2px solid green;
+    outline: none;
+}
+
+/* Ejercicio 28*/
+
+.portada-responsiva {
+    display: flex;
+    justify-content: space-between;
+}
+.portada-responsiva .seccion {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(10, 138, 236);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    align-content: center;  
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .portada-responsiva {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portada-responsiva .seccion {
+        width: 100%;
+        height: 50px;
+        margin: 10px;
+        font-size: 20px;
+    }
+}

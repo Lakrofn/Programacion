@@ -89,20 +89,6 @@ def es_cuadrado_magico():
 es_cuadrado_magico()
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def is_happy(numero):
     resultado = 0
     acumulador = 0
