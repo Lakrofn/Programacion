@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .mover:hover{
+            left: calc(var(--random-x) * 1vw);
+            top: calc(var(--random-y) * 1vh);
+        }
+    </style>
+
+    <button id="boton" class="mover" style="--random-x: 50; --random-y: 20;">Boton</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

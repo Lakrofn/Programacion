@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Muro de Comentarios Dinámico</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; line-height: 1.6; }
+        .formulario { background: #f4f4f4; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        input, textarea { width: 95%; margin-bottom: 10px; padding: 8px; display: block; }
+        .comentario { border-bottom: 1px solid #ddd; padding: 10px; margin-bottom: 10px; list-style: none; }
+        .usuario { font-weight: bold; color: #2c3e50; display: block; }
+        .texto-comentario { display: block; margin: 5px 0; }
+        .btn-accion { margin-right: 5px; font-size: 0.8em; cursor: pointer; }
+        .editando-input { width: 100%; padding: 5px; margin: 5px 0; }
+        
+        /* Estilo para el nuevo botón */
+        #btn-borrar-todo { background-color: #ff4444; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; }
+        #btn-borrar-todo:hover { background-color: #cc0000; }
+        #btn-enviar { padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h1>Muro de Comentarios</h1>
+
+    <div class="formulario">
+        <input type="text" id="nombre" placeholder="Tu nombre...">
+        <textarea id="mensaje" placeholder="Escribe un comentario..."></textarea>
+        
+        <button id="enviar">Publicar Comentario</button>
+        <button id="borrartodo">Borrar Todo el Foro</button>
+    </div>
+
+
+    
+    
+    <ul id="lista">
+        </ul>
+
+        <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 640px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      color: #222;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    form {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    input {
+      padding: .5rem;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      flex: 1 1 120px;
+    }
+
+    button {
+      padding: .5rem 1rem;
+      border: 0;
+      border-radius: 4px;
+      background: #2a5d9f;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button.eliminar {
+      background: #b3261e;
+      padding: .3rem .7rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: .6rem;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #f0f0f0;
+    }
+
+    /* Tarea 4: artículos caros */
+    tr.caro {
+      background: #fff3c4;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Inventario</h1>
+
+  <!-- Tarea 2: formulario -->
+  <form id="form-articulo">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="number" id="cantidad" placeholder="Cantidad" min="0" step="1" required>
+    <input type="number" id="precio" placeholder="Precio (€)" min="0" step="0.01" required>
+    <button type="submit">Añadir</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="cuerpo-tabla"></tbody>
+  </table>
+
+  <script>
+
+  </script>
+</body>
+
+</html>

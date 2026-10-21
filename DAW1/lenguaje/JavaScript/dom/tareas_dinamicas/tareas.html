@@ -6,13 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <input type="text" id="tarea">
-    <button id="agregar">Agregar tarea</button>
-    <button id="eliminar">Eliminar tarea</button>
+    <style>
+        button{
+            margin-left:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color: lightblue;
+        }
+        button:active{
+            background-color: rgb(255, 255, 255);
+        }
+        li{
+            margin:10px 0;
+        }
+    </style>
+
+    <h1>Gestor de Tareas</h1>
+
+    <input type="text" id="tarea" placeholder="Escribe una tarea">
+    <button id="añadir">Agregar</button>
+    <button id="limpiar">Limpiar todo</button>
 
     <ul id="lista"></ul>
-
 
     <script src="script.js"></script>
 </body>
