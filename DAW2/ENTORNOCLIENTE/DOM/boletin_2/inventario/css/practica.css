@@ -1,0 +1,10 @@
+.caro,
+.sobresaliente,
+.larga {
+  background-color: #fff1b8;
+}
+
+tr.caro {
+  background-color: #fff0c2;
+  color: #242424;
+}

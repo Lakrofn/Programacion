@@ -1,0 +1,5 @@
+body { font-family: Arial, sans-serif; margin: 2rem; line-height: 1.5; }
+section { margin-bottom: 2rem; }
+#enlace { display: inline-block; padding: .7rem; background-color: #e5e7eb; }
+#enlace.resaltado { background-color: #ffe082; }
+#coordenadas { font-family: monospace; }

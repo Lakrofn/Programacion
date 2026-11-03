@@ -1,0 +1,12 @@
+SOLUCIONARIO DOCENTE - INTRODUCCIÓN A EVENTOS (DWEC 2.º DAW)
+
+Cinco carpetas, una por ejercicio. Abrir index.html en Chrome y usar F12 > Consola.
+Todos los ejemplos usan archivos JavaScript externos con defer.
+
+1. Click, cambio de color mediante classList y CSS, coordenadas clientX/clientY.
+2. keydown con event.key y event.code. Se muestra en página y consola para evitar alertas repetidas; puede cambiarse a alert si el enunciado exige literalmente una alerta.
+3. Delegación en UL y cálculo del nivel relativo a UL (UL = 1, LI = 2). El enunciado debe aclarar el punto de partida de la profundidad.
+4. Validación de nombre y correo, preventDefault y evento formularioEnviado. No se realiza envío a servidor.
+5. CustomEvent miEvento y dispatchEvent.
+
+NOTA: Soluciones reconstruidas a partir de los cinco ejercicios descritos en la conversación. Si la redacción exacta del boletín establece otras condiciones, conviene contrastarlas.

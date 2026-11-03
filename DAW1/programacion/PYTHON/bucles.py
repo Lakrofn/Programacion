@@ -230,7 +230,7 @@ print("El mayor numero es:", mayor)
 print("El menor numero es:", menor)
 '''
 # Ejercicio 11
-
+'''
 altura = int(input("Ingrese la altura: "))
 
 while altura < 0:
@@ -240,7 +240,7 @@ for i in range(1, altura):
     espacios = " " * (altura - i)
     asteriscos = "*" * (2 * i - 1)
     print(espacios + asteriscos)
-
+'''
 # Ejercicio 12
 '''
 num1 = int(input("Ingrese un numero: "))

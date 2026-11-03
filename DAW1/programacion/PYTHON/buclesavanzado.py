@@ -325,6 +325,7 @@ elif figura == "rombo" or figura == "Rombo":
 '''
 # Ejercicio 12
 '''
+
 num1 = int(input("Introduce un número: "))
 area = 2 * num1 - 1
 
